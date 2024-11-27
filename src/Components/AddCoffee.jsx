@@ -52,17 +52,19 @@ const AddCoffee = () => {
             </div>
             <div
                 style={{ backgroundImage: `url('${bg}')` }}
-                className="bg-cover bg-center space-y-6 pt-6"
+                className="bg-cover bg-top space-y-6 pt-6"
             >
                 <Link
                     to="/"
-                    className="drop-shadow-2xl flex items-center gap-1 text-lg max-w-screen-md mx-auto font-semibold px-6 sm:px-0"
+                    className="drop-shadow-2xl font-rancho flex items-center gap-1 text-lg max-w-screen-md mx-auto font-semibold px-6 sm:px-0"
                 >
                     <FaArrowLeft style={{ fontSize: ".7rem" }} /> Back to home
                 </Link>
                 <div className="space-y-3 max-w-screen-md mx-auto bg-[#F4F3F0] px-6 py-12 rounded-lg">
                     <div className="text-center max-w-screen-sm mx-auto">
-                        <h2 className="font-bold text-2xl">Add New Coffee</h2>
+                        <h2 className="font-bold font-rancho text-2xl md:text-3xl mb-4">
+                            Add New Coffee
+                        </h2>
                         <p>
                             It is a long established fact that a reader will be
                             distraceted by the readable content of a page when
@@ -80,7 +82,7 @@ const AddCoffee = () => {
                             <div className="flex gap-4 justify-center flex-col sm:flex-row">
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text text-lg">
+                                        <span className="label-text font-semibold text-lg">
                                             Coffee Name
                                         </span>
                                     </div>
@@ -93,7 +95,7 @@ const AddCoffee = () => {
                                 </label>
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text text-lg">
+                                        <span className="label-text font-semibold text-lg">
                                             Chef
                                         </span>
                                     </div>
@@ -108,7 +110,7 @@ const AddCoffee = () => {
                             <div className="flex gap-4 justify-center flex-col sm:flex-row">
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text text-lg">
+                                        <span className="label-text font-semibold text-lg">
                                             Supplier
                                         </span>
                                     </div>
@@ -121,7 +123,7 @@ const AddCoffee = () => {
                                 </label>
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text text-lg">
+                                        <span className="label-text font-semibold text-lg">
                                             Taste
                                         </span>
                                     </div>
@@ -136,7 +138,7 @@ const AddCoffee = () => {
                             <div className="flex gap-4 justify-center flex-col sm:flex-row">
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text text-lg">
+                                        <span className="label-text font-semibold text-lg">
                                             Category
                                         </span>
                                     </div>
@@ -149,7 +151,7 @@ const AddCoffee = () => {
                                 </label>
                                 <label className="form-control w-full">
                                     <div className="label">
-                                        <span className="label-text text-lg">
+                                        <span className="label-text font-semibold text-lg">
                                             Details
                                         </span>
                                     </div>
@@ -163,7 +165,7 @@ const AddCoffee = () => {
                             </div>
                             <label className="form-control w-full">
                                 <div className="label">
-                                    <span className="label-text text-lg">
+                                    <span className="label-text font-semibold text-lg">
                                         Photo
                                     </span>
                                 </div>

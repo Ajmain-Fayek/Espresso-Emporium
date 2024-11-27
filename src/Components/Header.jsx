@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div style={{ backgroundImage: `url('${bg}')` }} className="flex items-center gap-4 py-4 justify-center bg-cover">
             <img className="h-16" src={img} />
-            <p className="text-white text-6xl">Espresso Emporium</p>
+            <p className="text-white text-6xl font-rancho">Espresso Emporium</p>
         </div>
     );
 };

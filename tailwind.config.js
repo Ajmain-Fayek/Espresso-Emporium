@@ -5,6 +5,7 @@ export default {
         extend: {
             fontFamily: {
                 rancho: "'Rancho', cursive",
+                relway: '"Raleway", sans-serif',
             },
         },
     },
