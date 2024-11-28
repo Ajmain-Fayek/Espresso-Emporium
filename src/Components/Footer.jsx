@@ -97,7 +97,7 @@ const Footer = () => {
                         />
                         <textarea
                             placeholder="Message"
-                            className="bg-white textarea py-2 px-4 textarea-lg h-[130px] w-full placeholder:text-gray-500 shadow-sm rounded-md"
+                            className="bg-white textarea text-base py-2 px-4 textarea-lg h-[130px] w-full placeholder:text-gray-500 shadow-sm rounded-md"
                         ></textarea>
                         <input
                             type="submit"
