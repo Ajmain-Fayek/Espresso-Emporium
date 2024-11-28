@@ -26,7 +26,7 @@ const Footer = () => {
                         src="https://i.ibb.co.com/1qkrKqP/logo1.png"
                         className="h-[90px] w-[75px]"
                     />
-                    <h3 className="font-rancho font-semibold text-2xl">
+                    <h3 className="font-rancho text-[#331A15] font-semibold text-2xl">
                         Espresso Emporium
                     </h3>
                     <p className="max-w-lg">
@@ -36,38 +36,50 @@ const Footer = () => {
                     </p>
                     <div className="flex items-center gap-4 pb-2">
                         <div className="rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150">
-                            <FaInstagramSquare style={{ fontSize: "2rem" }} />
+                            <FaInstagramSquare
+                                color="#331A15"
+                                style={{ fontSize: "2rem" }}
+                            />
                         </div>
                         <div className="rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150">
-                            <FaFacebookSquare style={{ fontSize: "2rem" }} />
+                            <FaFacebookSquare
+                                color="#331A15"
+                                style={{ fontSize: "2rem" }}
+                            />
                         </div>
                         <div className="rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150">
-                            <FaLinkedin style={{ fontSize: "2rem" }} />
+                            <FaLinkedin
+                                color="#331A15"
+                                style={{ fontSize: "2rem" }}
+                            />
                         </div>
                         <div className="rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]  duration-300 hover:scale-150">
-                            <FaGithubSquare style={{ fontSize: "2rem" }} />
+                            <FaGithubSquare
+                                color="#331A15"
+                                style={{ fontSize: "2rem" }}
+                            />
                         </div>
                     </div>
-                    <h5 className="font-rancho font-semibold text-2xl">
+                    <h5 className="font-rancho text-[#331A15] font-semibold text-2xl">
                         Get in Touch
                     </h5>
                     <ul className="space-y-2">
                         <li className="flex items-center gap-4">
                             <div>
-                                <IoIosCall />
+                                <IoIosCall color="#331A15" />
                             </div>
                             +88 01533 333 333
                         </li>
                         <li className="flex items-center gap-4">
                             {" "}
                             <div>
-                                <MdEmail />
+                                <MdEmail color="#331A15" />
                             </div>{" "}
                             info@gmail.com
                         </li>
                         <li className="flex items-center gap-4">
                             <div>
-                                <MdLocationOn />
+                                <MdLocationOn color="#331A15" />
                             </div>
                             72, Wall street, King Road, Dhaka
                         </li>
@@ -76,7 +88,7 @@ const Footer = () => {
 
                 {/* Connect with us */}
                 <div className="md:mt-[102px] space-y-3 md:w-1/2">
-                    <h4 className="font-rancho font-semibold text-2xl">
+                    <h4 className="font-rancho text-[#331A15] font-semibold text-2xl">
                         Connect with US
                     </h4>
                     <form
@@ -102,7 +114,7 @@ const Footer = () => {
                         <input
                             type="submit"
                             value="Send Message"
-                            className="w-fit font-rancho text-lg font-normal btn rounded-full btn-sm  border-[#331A15] bg-transparent hover:bg-[#331A15] hover:text-gray-300"
+                            className="w-fit font-rancho text-[#331A15] text-lg font-normal btn rounded-full btn-sm  border-[#331A15] bg-transparent hover:bg-[#331A15] hover:text-gray-300"
                         />
                     </form>
                 </div>

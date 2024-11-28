@@ -94,17 +94,26 @@ function App() {
                                 </figure>
                                 <div className="flex justify-between w-full mr-2">
                                     <div className="flex flex-col justify-center gap-2">
-                                        <h2 className="card-title font-rancho text-2xl lg:text-3xl">
+                                        <h2 className="card-title text-[#331A15] font-rancho text-2xl lg:text-3xl">
                                             {c.name}
                                         </h2>
                                         <p>
-                                            <b>Details:</b> {c.details}
+                                            <b className="text-[#331A15] font-semibold">
+                                                Details:
+                                            </b>{" "}
+                                            {c.details}
                                         </p>
                                         <p>
-                                            <b>Taste:</b> {c.taste}
+                                            <b className="text-[#331A15] font-semibold">
+                                                Taste:
+                                            </b>{" "}
+                                            {c.taste}
                                         </p>
                                         <p>
-                                            <b>Category:</b> {c.category}
+                                            <b className="text-[#331A15] font-semibold">
+                                                Category:
+                                            </b>{" "}
+                                            {c.category}
                                         </p>
                                     </div>
                                     <div className="flex flex-col justify-evenly">
