@@ -105,7 +105,7 @@ const Login = () => {
                                     Sign In
                                 </button>
                             </form>
-                            <p className="mt-6 flex gap-1 text-sm">
+                            {/* <p className="mt-6 flex gap-1 text-sm">
                                 Did you
                                 <Link
                                     onClick={handleForgetPassword}
@@ -113,7 +113,7 @@ const Login = () => {
                                 >
                                     forget your password?
                                 </Link>
-                            </p>
+                            </p> */}
                             {/* Error */}
                             {errorMsg && (
                                 <p className="text-red-700 mt-4 bg-red-50 border border-red-100 px-4 py-1 w-fit rounded-md">
