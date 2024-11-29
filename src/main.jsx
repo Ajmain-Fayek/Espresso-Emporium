@@ -8,6 +8,7 @@ import UpdateCoffee from "./Components/UpdateCoffee.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import ProductDetails from "./Components/ProductDetails.jsx";
 import Error404 from "./Components/Error404.jsx";
+import Login from "./Components/Login.jsx";
 
 const routes = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const routes = createBrowserRouter([
         element: <App />,
         errorElement: <Error404 />,
         loader: () => fetch("http://localhost:5000/coffees"),
+    },
+    {
+        path: "/login",
+        element: <Login />,
     },
     {
         path: "/add-coffee",

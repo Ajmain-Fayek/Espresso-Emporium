@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Hero = () => {
     return (
@@ -17,12 +18,12 @@ const Hero = () => {
                     Get the nostalgia back!! Your companion of every moment!!!
                     Enjoy the beautiful moments and make them memorable.
                 </p>
-                <button
+                <Link to="/login"
                     className="btn font-rancho rounded-none bg-[#E3B577] text-[#242222]
                 hover:bg-transparent hover:text-white border-[#E3B577] hover:border-[#fff]"
                 >
                     Learn More
-                </button>
+                </Link>
             </div>
         </div>
     );
