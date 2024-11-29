@@ -19,7 +19,7 @@ const ProductDetails = () => {
                 style={{
                     backgroundImage: `url('https://i.ibb.co.com/tJZwnFF/11.png')`,
                 }}
-                className="bg-cover bg-top pt-6"
+                className="bg-cover bg-left-top pt-6"
             >
                 <Link
                     to="/"
