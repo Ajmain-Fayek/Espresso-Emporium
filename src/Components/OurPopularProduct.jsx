@@ -106,9 +106,12 @@ const OurPopularProduct = () => {
                                     </p>
                                 </div>
                                 <div className="flex flex-col justify-evenly">
-                                    <button className="btn btn-square btn-sm rounded-md bg-[#D2B48C] text-white hover:bg-[#c3976b]">
+                                    <Link
+                                        to={`/coffee-details/${c._id}`}
+                                        className="btn btn-square btn-sm rounded-md bg-[#D2B48C] text-white hover:bg-[#c3976b]"
+                                    >
                                         <FaEye style={{ fontSize: "1rem" }} />
-                                    </button>
+                                    </Link>
                                     <Link
                                         to={`/update-coffee/${c._id}`}
                                         className="btn btn-square btn-sm rounded-md bg-[#3C393B] text-gray-200 hover:bg-[#555154]"

@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import AddCoffee from "./Components/AddCoffee.jsx";
 import UpdateCoffee from "./Components/UpdateCoffee.jsx";
 import { HelmetProvider } from "react-helmet-async";
+import ProductDetails from "./Components/ProductDetails.jsx";
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,12 @@ const routes = createBrowserRouter([
     {
         path: "/update-coffee/:id",
         element: <UpdateCoffee />,
+        loader: ({ params }) =>
+            fetch(`http://localhost:5000/coffees/${params.id}`),
+    },
+    {
+        path: "/coffee-details/:id",
+        element: <ProductDetails />,
         loader: ({ params }) =>
             fetch(`http://localhost:5000/coffees/${params.id}`),
     },
