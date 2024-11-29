@@ -5,7 +5,7 @@ const FollowOnInstagram = () => {
         <div className="my-32 space-y-12">
             <div className="max-w-md mx-auto text-center space-y-4">
                 <p>Follow Us Now</p>
-                <h3 className="text-[#331A15] md:text-6xl text-3xl sm:text-5xl font-rancho font-semibold">
+                <h3 className="text-[#331A15] md:text-6xl text-3xl sm:text-5xl font-rancho font-semibold drop-shadow-[0_0_5px_#331A15]">
                     Follow on Instagram
                 </h3>
             </div>

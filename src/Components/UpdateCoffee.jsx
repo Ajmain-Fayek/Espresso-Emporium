@@ -69,11 +69,14 @@ const UpdateCoffee = () => {
                     to="/"
                     className="drop-shadow-2xl font-rancho flex items-center gap-1 text-lg max-w-screen-md mx-auto font-semibold px-6 sm:px-0"
                 >
-                    <FaArrowLeft style={{ fontSize: ".7rem" }} /> Back to home
+                    <p className="drop-shadow-[0_0_5px_#374151] flex items-center gap-1.5">
+                        <FaArrowLeft style={{ fontSize: ".7rem" }} /> Back to
+                        home
+                    </p>
                 </Link>
                 <div className="space-y-3 max-w-screen-md mx-auto bg-[#F4F3F0] px-6 py-12 rounded-lg">
                     <div className="text-center max-w-screen-sm mx-auto">
-                        <h2 className="font-bold font-rancho text-2xl md:text-3xl mb-4">
+                        <h2 className="font-bold font-rancho text-2xl md:text-3xl mb-4 drop-shadow-[0_0_5px_#374151]">
                             Update Coffee: {coffee.name}
                         </h2>
                         <p>
@@ -197,7 +200,7 @@ const UpdateCoffee = () => {
                             <input
                                 type="submit"
                                 value="Update Coffee"
-                                className="btn w-full bg-[#D2B48C] rounded-none"
+                                className="btn w-full bg-[#D2B48C] rounded-none border-[#374151] hover:border-[#374151] font-rancho"
                             />
                         </form>
                     </div>

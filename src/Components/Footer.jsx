@@ -26,7 +26,7 @@ const Footer = () => {
                         src="https://i.ibb.co.com/1qkrKqP/logo1.png"
                         className="h-[90px] w-[75px]"
                     />
-                    <h3 className="font-rancho text-[#331A15] font-semibold text-2xl">
+                    <h3 className="font-rancho text-[#331A15] font-semibold text-2xl drop-shadow-[0_0_5px_#331A15]">
                         Espresso Emporium
                     </h3>
                     <p className="max-w-lg">
@@ -60,7 +60,7 @@ const Footer = () => {
                             />
                         </div>
                     </div>
-                    <h5 className="font-rancho text-[#331A15] font-semibold text-2xl">
+                    <h5 className="font-rancho text-[#331A15] font-semibold text-2xl drop-shadow-[0_0_5px_#331A15]">
                         Get in Touch
                     </h5>
                     <ul className="space-y-2">
@@ -88,7 +88,7 @@ const Footer = () => {
 
                 {/* Connect with us */}
                 <div className="md:mt-[102px] space-y-3 md:w-1/2">
-                    <h4 className="font-rancho text-[#331A15] font-semibold text-2xl">
+                    <h4 className="font-rancho text-[#331A15] font-semibold text-2xl drop-shadow-[0_0_5px_#331A15]">
                         Connect with US
                     </h4>
                     <form

@@ -18,8 +18,8 @@ const Hero = () => {
                     Enjoy the beautiful moments and make them memorable.
                 </p>
                 <button
-                    className="btn rounded-sm bg-[#E3B577] text-[#242222]
-                hover:bg-transparent hover:text-white hover:border-[#fff]"
+                    className="btn font-rancho rounded-none bg-[#E3B577] text-[#242222]
+                hover:bg-transparent hover:text-white border-[#E3B577] hover:border-[#fff]"
                 >
                     Learn More
                 </button>

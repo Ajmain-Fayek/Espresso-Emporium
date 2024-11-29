@@ -60,14 +60,16 @@ const OurPopularProduct = () => {
             >
                 <div className="mx-auto text-center space-y-4">
                     <p>--- Sip & Savor ---</p>
-                    <h3 className="text-[#331A15] md:text-6xl text-3xl sm:text-5xl font-rancho font-semibold">
+                    <h3 className="text-[#331A15] md:text-6xl text-3xl sm:text-5xl font-rancho font-semibold drop-shadow-[0_0_5px_#331A15]">
                         Our Popular Products
                     </h3>
                     <Link
                         to="/add-coffee"
-                        className="btn btn-sm bg-[#E3B577] border-[#331A15]  text-white rounded-sm hover:bg-[#F5F4F1] hover:text-[#331A15] hover:border-[#331A15]"
+                        className="btn btn-sm bg-[#E3B577] border-[#331A15]  text-white rounded-[5px] hover:bg-[#F5F4F1] hover:text-[#331A15] hover:border-[#331A15]"
                     >
-                        Add Coffee <CgCoffee />
+                        <p className="drop-shadow-[0_0_5px_#331A15] flex items-center gap-1.5 font-rancho">
+                            Add Coffee <CgCoffee />
+                        </p>
                     </Link>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-10 mx-auto max-w-screen-2xl px-2 gap-6">
