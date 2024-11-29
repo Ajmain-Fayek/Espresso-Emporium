@@ -60,7 +60,7 @@ const AddCoffee = () => {
                     to="/"
                     className="drop-shadow-2xl font-rancho flex items-center gap-1 text-lg max-w-screen-md mx-auto font-semibold px-6 sm:px-0"
                 >
-                    <p className="drop-shadow-[0_0_5px_#374151] flex items-center gap-1.5">
+                    <p className="drop-shadow-[0_0_5px_#374151] flex items-center gap-1.5 hover:bg-[#D2B48C] py-1 px-2">
                         <FaArrowLeft style={{ fontSize: ".7rem" }} /> Back to
                         home
                     </p>
