@@ -5,6 +5,8 @@ import { Link, useLoaderData, useNavigate } from "react-router";
 import { FaArrowLeft } from "react-icons/fa";
 import bg from "../assets/more/11.png";
 import Swal from "sweetalert2";
+import Footer from "./Footer";
+import CopyRight from "./CopyRight";
 
 const UpdateCoffee = () => {
     const coffee = useLoaderData();
@@ -61,7 +63,7 @@ const UpdateCoffee = () => {
             </div>
             <div
                 style={{ backgroundImage: `url('${bg}')` }}
-                className="bg-cover bg-top space-y-6 pt-6"
+                className="bg-cover bg-top space-y-6 pt-6 mb-16"
             >
                 <Link
                     to="/"
@@ -201,6 +203,8 @@ const UpdateCoffee = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
+            <CopyRight />
         </>
     );
 };

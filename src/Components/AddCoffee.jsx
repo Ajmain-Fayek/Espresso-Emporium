@@ -5,6 +5,8 @@ import { Link } from "react-router";
 import { FaArrowLeft } from "react-icons/fa";
 import bg from "../assets/more/11.png";
 import Swal from "sweetalert2";
+import Footer from "./Footer";
+import CopyRight from "./CopyRight";
 
 const AddCoffee = () => {
     const handleForm = (e) => {
@@ -52,7 +54,7 @@ const AddCoffee = () => {
             </div>
             <div
                 style={{ backgroundImage: `url('${bg}')` }}
-                className="bg-cover bg-top space-y-6 pt-6"
+                className="bg-cover bg-top space-y-6 pt-6 mb-16"
             >
                 <Link
                     to="/"
@@ -185,6 +187,8 @@ const AddCoffee = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
+            <CopyRight/>
         </>
     );
 };

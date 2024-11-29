@@ -8,6 +8,7 @@ import Hero from "./Components/Hero";
 import FollowOnInstagram from "./Components/FollowOnInstagram";
 import SpeacialAttractions from "./Components/SpeacialAttractions";
 import Footer from "./Components/Footer";
+import CopyRight from "./Components/CopyRight";
 
 function App() {
     const coffees = useLoaderData();
@@ -87,7 +88,7 @@ function App() {
                         {coffee.map((c) => (
                             <div
                                 key={c._id}
-                                className="card rounded-md card-side shadow-md bg-[#f5f4f1b6]"
+                                className="card rounded-md card-side shadow-md bg-[#f5f4f1b6] py-10 px-6"
                             >
                                 <figure>
                                     <img src={c.photo} alt={c.name} />
@@ -153,17 +154,7 @@ function App() {
             <Footer />
 
             {/* CopyRight */}
-            <div
-                style={{
-                    backgroundImage:
-                        "url('https://i.ibb.co.com/Kmhns1y/24.jpg')",
-                }}
-                className="text-center py-2 bg-cover bg-no-repeat"
-            >
-                <p className="text-gray-300 font-rancho max-w-80 mx-auto px-4">
-                    &copy; Copyright Espresso Emporium ! All Rights Reserved
-                </p>
-            </div>
+            <CopyRight />
         </>
     );
 }
