@@ -7,11 +7,13 @@ import AddCoffee from "./Components/AddCoffee.jsx";
 import UpdateCoffee from "./Components/UpdateCoffee.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import ProductDetails from "./Components/ProductDetails.jsx";
+import Error404 from "./Components/Error404.jsx";
 
 const routes = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+        errorElement: <Error404 />,
         loader: () => fetch("http://localhost:5000/coffees"),
     },
     {
