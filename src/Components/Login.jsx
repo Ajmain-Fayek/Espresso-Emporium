@@ -44,11 +44,11 @@ const Login = () => {
             </div>
 
             {/* Login */}
-            <div className="max-w-screen-lg mx-auto p-6 mt-6 sm:px-8 sm:py-10 lg:px-12 md:mb-24  mb-36">
+            <div className="max-w-screen-lg mx-auto px-6 py-20">
                 <div className="flex flex-col justify-between space-x-0 sm:flex-row sm:space-x-12">
                     <div className="mb-8 w-full sm:mb-0 sm:w-1/2">
                         {/* Left side form */}
-                        <h2 className="mb-6 text-3xl font-semibold tracking-tight">
+                        <h2 className="mb-6 text-3xl font-semibold tracking-widest drop-shadow-[0_0_5px_#331A15] text-[#331A15] font-rancho">
                             Sign In
                         </h2>
                         <form onSubmit={handleSignIn}>
