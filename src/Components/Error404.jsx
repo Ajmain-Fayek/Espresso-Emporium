@@ -4,10 +4,12 @@ import CopyRight from "./CopyRight";
 import Header from "./Header";
 import { Link } from "react-router";
 import { FaArrowLeft } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Error404 = () => {
     return (
         <div>
+            <Helmet><title>code 404 | Page not found</title></Helmet>
             <Header />
             <div className="w-fit mx-auto mt-6">
                 <Link

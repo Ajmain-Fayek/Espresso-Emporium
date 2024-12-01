@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { FaArrowLeft, FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router";
 import Footer from "./Footer";
 import CopyRight from "./CopyRight";
 import Header from "./Header";
+import { AuthContext } from "../Context/AuthProvider";
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext);
     const [errorMsg, setErrorMsg] = useState("");
     const [showPassword, setShowPassword] = useState(false);
 
@@ -39,6 +41,42 @@ const Register = () => {
         }
         if (!terms) return setErrorMsg("Accept Terms And Conditions!");
         // Create User
+        createUser(email, password)
+            .then((data) => {
+                const user = data.user;
+                const obj = {
+                    name,
+                    firstName,
+                    LastName,
+                    email,
+                    password,
+                    terms,
+                    photoURL,
+                    emailVerified: user?.emailVerified,
+                    phoneNumber: user?.phoneNumber,
+                    uid: user?.uid,
+                    isAnonymous: user?.isAnonymous,
+                    metadata: {
+                        createdAt: user?.metadata?.createdAt,
+                        creationTime: user?.metadata?.creationTime,
+                        lastLoginAt: user?.metadata?.lastLoginAt,
+                        lastSignInTime: user?.metadata?.lastSignInTime,
+                    },
+                };
+                fetch("https://espresso-emporium-coffees.vercel.app/users", {
+                    method: "POST",
+                    headers: { "content-type": "application/json" },
+                    body: JSON.stringify(obj),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        if (data.insertedId) {
+                            console.log("User Created in DB");
+                        }
+                    });
+                console.log(data.user);
+            })
+            .catch((err) => setErrorMsg(err));
     };
     return (
         <>

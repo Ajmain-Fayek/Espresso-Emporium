@@ -24,13 +24,16 @@ const UpdateCoffee = () => {
 
         const obj = { name, chef, taste, category, details, photo, supplier };
 
-        fetch(`http://localhost:5000/coffees/${coffee._id}`, {
-            method: "PUT",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(obj),
-        })
+        fetch(
+            `https://espresso-emporium-coffees.vercel.app/coffees/${coffee._id}`,
+            {
+                method: "PUT",
+                headers: {
+                    "content-type": "application/json",
+                },
+                body: JSON.stringify(obj),
+            }
+        )
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
