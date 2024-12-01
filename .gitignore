@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 /src/Firebase/**/*.js
+_redirects
 
 # Editor directories and files
 .vscode/*
