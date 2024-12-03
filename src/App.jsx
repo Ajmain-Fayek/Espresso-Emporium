@@ -1,5 +1,4 @@
 import Header from "./Components/Header";
-
 import Hero from "./Components/Hero";
 import FollowOnInstagram from "./Components/FollowOnInstagram";
 import SpeacialAttractions from "./Components/SpeacialAttractions";
